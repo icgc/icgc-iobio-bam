@@ -123,6 +123,13 @@ ADD bin/tabix /home/iobio/iobio/bin/tabix
 RUN chmod +x /home/iobio/iobio/bin/tabix
 
 #
+# Our version of the vcfstatsalive binary to enfore minimum required variants
+#
+RUN rm -rf /home/iobio/iobio/bin/vcfstatsalive
+ADD bin/vcfstatsalive /home/iobio/iobio/bin/vcfstatsalive
+RUN chmod +x /home/iobio/iobio/bin/vcfstatsalive
+
+#
 # Modify their backend code
 #
 
